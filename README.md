@@ -2,8 +2,6 @@
 
 Template for dockerized fullstack projects with Docker Compose.
 
-## Technologies:
-
 ### Package includes:
 
 Backend:
