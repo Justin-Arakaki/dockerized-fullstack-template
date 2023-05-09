@@ -1,11 +1,11 @@
-# NestJS-React-TypeScript-Dockerized-Fullstack-Template
+# Dockerized-Fullstack-Template
 
 Template for dockerized fullstack projects with Docker Compose.
 
 ### Package includes:
 
 Backend:
-- Nest.js
+- Express.js
 - TypeScript
 - Nodemon
 - Jest
