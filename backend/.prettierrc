@@ -1,0 +1,21 @@
+{
+  "singleQuote": true,
+  "trailingComma": "es5",
+  "tabWidth": 2,
+  "semi": true,
+  "printWidth": 80,
+  "importOrder": [
+    "\\/controllers\\/",
+    "\\/models\\/",
+    "\\/routes\\/",
+    "\\/middleware\\/",
+    "\\/utils\\/",
+    "\\/services\\/",
+    "\\/constants\\/",
+    "\\/config\\/",
+    "^./",
+    "^../",
+    "\\.scss$",
+    "\\.css$"
+  ]
+}
