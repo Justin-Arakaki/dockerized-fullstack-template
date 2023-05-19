@@ -15,11 +15,11 @@ module.exports = {
   extends: [
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
-    "plugin:jest/recommended",
+    'plugin:jest/recommended',
     'prettier',
   ],
   rules: {
-    "prettier/prettier": "error",
+    'prettier/prettier': 'error',
     'no-shadow': 'off',
     '@typescript-eslint/no-shadow': ['error'],
     '@typescript-eslint/no-unused-vars': ['error'],
@@ -38,9 +38,5 @@ module.exports = {
     ],
     complexity: ['error', 10],
   },
-  ignorePatterns: [
-    'src/**/*.test.ts',
-    '.eslintrc.cjs',
-    '*.d.ts',
-  ],
+  ignorePatterns: ['src/**/*.test.ts', '.eslintrc.cjs', '*.d.ts'],
 };

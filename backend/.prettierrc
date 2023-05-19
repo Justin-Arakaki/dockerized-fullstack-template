@@ -5,17 +5,18 @@
   "semi": true,
   "printWidth": 80,
   "importOrder": [
-    "\\/controllers\\/",
-    "\\/models\\/",
-    "\\/routes\\/",
-    "\\/middleware\\/",
-    "\\/utils\\/",
-    "\\/services\\/",
-    "\\/constants\\/",
-    "\\/config\\/",
+    "/controllers/",
+    "/models/",
+    "/routes/",
+    "/middleware/",
+    "/utils/",
+    "/services/",
+    "/constants/",
+    "/config/",
+    "\\/errors\\/",
     "^./",
     "^../",
-    "\\.scss$",
-    "\\.css$"
+    ".scss$",
+    ".css$"
   ]
 }
