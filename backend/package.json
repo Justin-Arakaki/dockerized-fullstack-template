@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "private": true,
   "description": "Backend",
+  "type": "module",
   "main": "src/index.ts",
   "scripts": {
-    "build": "tsc --build tsconfig.json",
+    "build": "tsc",
     "start": "npm run build && node ./dist/index.js",
     "dev": "nodemon",
     "test": "jest --watch"

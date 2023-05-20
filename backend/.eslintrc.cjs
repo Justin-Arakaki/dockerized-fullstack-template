@@ -11,7 +11,7 @@ module.exports = {
     project: ['./tsconfig.json'],
     tsconfigRootDir: __dirname,
   },
-  plugins: ['@typescript-eslint', 'jest'],
+  plugins: ['@typescript-eslint', 'jest', 'prettier'],
   extends: [
     'eslint:recommended',
     'plugin:@typescript-eslint/recommended',
@@ -38,5 +38,5 @@ module.exports = {
     ],
     complexity: ['error', 10],
   },
-  ignorePatterns: ['src/**/*.test.ts', '.eslintrc.cjs', '*.d.ts'],
+  ignorePatterns: ['src/**/*.test.ts', '.eslintrc.cjs', '*.d.ts', 'dist'],
 };
