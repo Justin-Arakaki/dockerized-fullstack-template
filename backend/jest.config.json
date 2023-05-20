@@ -1,0 +1,15 @@
+{
+  "roots": ["<rootDir>/src"],
+  "testMatch": ["**/__tests__/**/*.ts?(x)", "**/?(*.)+(spec|test).ts?(x)"],
+  "moduleFileExtensions": ["ts", "tsx", "js", "jsx", "json", "node"],
+  "transform": {
+    "^.+\\.(ts|tsx)$": "ts-jest"
+  },
+  "watchPathIgnorePatterns": ["<rootDir>/node_modules/"],
+  "testPathIgnorePatterns": ["<rootDir>/node_modules/"],
+  "globals": {
+    "ts-jest": {
+      "tsconfig": "tsconfig.json"
+    }
+  }
+}

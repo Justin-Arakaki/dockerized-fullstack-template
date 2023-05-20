@@ -1,21 +1,18 @@
 {
   "compilerOptions": {
     "target": "ES6",
-    "useDefineForClassFields": true,
-    "lib": ["DOM", "DOM.Iterable", "ESNext"],
-    "allowJs": false,
-    "skipLibCheck": true,
+    "module": "ESNext",
+    "moduleResolution": "Node",
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
+    "outDir": "./dist",
     "strict": true,
     "forceConsistentCasingInFileNames": true,
-    "outDir": "./dist",
-    "module": "CommonJS",
-    "moduleResolution": "Node",
+    "skipLibCheck": true,
     "resolveJsonModule": true,
-    "isolatedModules": true,
-    "noEmit": true
+    "lib": ["ESNext"],
+    "rootDir": "./src"
   },
-  "include": ["src/**/*"],
-  "references": [{ "path": "./tsconfig.node.json" }]
+  "include": ["src"],
+  "exclude": ["node_modules"]
 }
