@@ -1,15 +1,10 @@
 {
-  "roots": ["<rootDir>/src"],
-  "testMatch": ["**/__tests__/**/*.ts?(x)", "**/?(*.)+(spec|test).ts?(x)"],
-  "moduleFileExtensions": ["ts", "tsx", "js", "jsx", "json", "node"],
+  "preset": "ts-jest",
+  "testEnvironment": "node",
+  "rootDir": "./src",
+  "moduleFileExtensions": ["ts", "js"],
+  "testMatch": ["**/__tests__/**/*.ts", "**/?(*.)+(spec|test).ts"],
   "transform": {
-    "^.+\\.(ts|tsx)$": "ts-jest"
-  },
-  "watchPathIgnorePatterns": ["<rootDir>/node_modules/"],
-  "testPathIgnorePatterns": ["<rootDir>/node_modules/"],
-  "globals": {
-    "ts-jest": {
-      "tsconfig": "tsconfig.json"
-    }
+    "^.+\\.ts$": "ts-jest"
   }
 }
