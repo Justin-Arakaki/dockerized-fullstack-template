@@ -1,0 +1,7 @@
+{
+	"linters": {
+		"frontend/**/*.{js,jsx,ts,tsx}": ["eslint --fix", "prettier --write"],
+		"backend/**/*.{js,ts}": ["eslint --fix", "prettier --write"]
+	},
+	"ignore": ["**/node_modules/**"]
+}
