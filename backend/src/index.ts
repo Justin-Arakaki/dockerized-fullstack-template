@@ -9,8 +9,6 @@ const port = process.env.PORT ? parseInt(process.env.PORT, 10) : 8080;
 
 app.use(errorHandlerMiddleware); // Must be at end
 
-// test
-
 app.listen(port, () => {
   // eslint-disable-next-line no-console
   console.log(`express server listening on port ${port}`);
