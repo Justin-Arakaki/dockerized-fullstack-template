@@ -1,5 +1,5 @@
 # Build project
-FROM node:18-alpine3.17 AS build
+FROM node:18-alpine3.17
 
 WORKDIR /app
 
@@ -9,16 +9,6 @@ RUN npm install
 
 COPY . .
 
-RUN npm run build
+EXPOSE 5173
 
-# Create Nginx server
-FROM nginx:latest
-
-COPY nginx.conf /etc/nginx/nginx.conf
-
-COPY --from=build /app/dist /usr/share/nginx/html
-
-EXPOSE 80
-
-# Start Nginx server
-CMD ["nginx", "-g", "daemon off;"]
+CMD ["npm", "run", "dev"]
