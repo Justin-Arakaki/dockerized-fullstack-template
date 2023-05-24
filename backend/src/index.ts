@@ -5,7 +5,7 @@ import { errorHandlerMiddleware } from './api/middleware/errorHandlerMiddleware'
 dotenv.config();
 
 const app = express();
-const port = process.env.PORT ? parseInt(process.env.PORT, 10) : 8000;
+const port = process.env.PORT ? parseInt(process.env.PORT, 10) : 8080;
 
 app.use(errorHandlerMiddleware); // Must be at end
 
