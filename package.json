@@ -3,9 +3,11 @@
 	"version": "0.0.0",
 	"description": "Template for dockerized fullstack projects with Docker Compose.",
 	"scripts": {
-		"precommit": "lint-staged"
+		"precommit": "lint-staged",
+		"prepare": "husky install"
 	},
 	"devDependencies": {
+		"husky": "^8.0.3",
 		"lint-staged": "^13.2.2"
 	}
 }
